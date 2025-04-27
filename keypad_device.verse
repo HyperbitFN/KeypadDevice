@@ -174,6 +174,7 @@ keypad_widget := class:
                     HorizontalAlignment := horizontal_alignment.Fill
                     VerticalAlignment := vertical_alignment.Fill
                     Padding := margin{ Left := -7.0, Top := -7.0, Right := -7.0, Bottom := -7.0}
+                    
                 overlay_slot: <# Base color / rectangle #>
                     Widget := BaseColorBlock
 
@@ -195,10 +196,10 @@ keypad_widget := class:
                     Widget := overlay:
                         Slots := array:
                             overlay_slot: <# Border / Outline #>
-                                Widget := BaseOutlineColorBlock
+                                Widget := TextAreaOutlineColorBlock
                                 HorizontalAlignment := horizontal_alignment.Fill
                                 VerticalAlignment := vertical_alignment.Fill
-                                Padding := margin{Left := -7.0, Top := -7.0, Bottom := -7.0, Right := -7.0}
+                                Padding := margin{Left := -7.0, Top := -3.0, Bottom := -7.0, Right := -3.0}
                                 
                             overlay_slot:<# Base Input Text Area Color #>
                                 Widget := TextAreaColorBlock
